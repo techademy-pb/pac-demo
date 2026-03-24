@@ -2,7 +2,7 @@
 apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
-  name: pac-demo
+  name: pac-demo-pipeline-run-generated-from-github-repo
   annotations:
     # The event we target as seen from the webhook payload
     # this can be an array too, i.e: [pull_request, push]
