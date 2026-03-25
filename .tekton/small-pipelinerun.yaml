@@ -12,14 +12,7 @@ spec:
     tasks:
       - name: noop-task
         displayName: Task with no effect
-        runAfter:
-          - fetch-repository
-        workspaces:
-          - name: source
-            workspace: source
         taskSpec:
-          workspaces:
-            - name: source
           steps:
             - name: noop-task
               image: registry.access.redhat.com/ubi10/ubi-micro
